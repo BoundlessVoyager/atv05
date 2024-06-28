@@ -7,10 +7,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://claudio:3XFEntPiuVgCHEt@atividade05.9realzl.mongodb.net', {
+mongoose.connect('', {
     retryWrites: true,
     w: 'majority',
-    appName: 'Atividade05'
+    appName: ''
 });
 
 app.use('/api', foodRouter);
